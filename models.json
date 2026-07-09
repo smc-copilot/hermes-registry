@@ -1,9 +1,199 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-06-28T10:29:26+05:30",
-  "providerCount": 9,
-  "modelCount": 165,
+  "generated": "2026-07-09T03:36:31.713065+00:00",
+  "providerCount": 36,
+  "modelCount": 243,
   "providers": [
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "alibaba",
+      "name": "Alibaba Cloud (DashScope)",
+      "version": "1.0.0",
+      "homepage": "https://www.alibabacloud.com/product/modelstudio",
+      "description": "Qwen models via Alibaba Cloud Model Studio (DashScope), OpenAI-compatible endpoint.",
+      "docs": "https://www.alibabacloud.com/help/en/model-studio/",
+      "apiBase": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+      "envKey": "DASHSCOPE_API_KEY",
+      "models": [
+        {
+          "name": "qwen-max",
+          "label": "Qwen Max",
+          "context": 32768,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Best-quality Qwen model for complex tasks."
+        },
+        {
+          "name": "qwen-plus",
+          "label": "Qwen Plus",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "qwen-turbo",
+          "label": "Qwen Turbo",
+          "context": 1000000,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "qwen3-coder-plus",
+          "label": "Qwen3 Coder Plus",
+          "context": 1000000,
+          "maxOutput": 65536,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Agentic coding model."
+        },
+        {
+          "name": "qwen-vl-max",
+          "label": "Qwen VL Max",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/alibaba.json",
+      "checksum": "sha256:bbb21ecd83e8a0c49349266c6f5c9d50a3038e36b4b0722be9292c816bf7408f"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "alibaba-coding-plan",
+      "name": "Alibaba Cloud (Coding Plan)",
+      "version": "1.0.0",
+      "homepage": "https://help.aliyun.com/zh/model-studio/",
+      "description": "Alibaba Cloud Coding Plan — dedicated Qwen coding tier on a separate endpoint.",
+      "docs": "https://www.alibabacloud.com/help/en/model-studio/",
+      "apiBase": "https://coding-intl.dashscope.aliyuncs.com/v1",
+      "envKey": "ALIBABA_CODING_PLAN_API_KEY",
+      "models": [
+        {
+          "name": "qwen3-coder-plus",
+          "label": "Qwen3 Coder Plus",
+          "context": 1000000,
+          "maxOutput": 65536,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Agentic coding model."
+        },
+        {
+          "name": "qwen3-coder-flash",
+          "label": "Qwen3 Coder Flash",
+          "context": 1000000,
+          "maxOutput": 65536,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "qwen-max",
+          "label": "Qwen Max",
+          "context": 32768,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/alibaba-coding-plan.json",
+      "checksum": "sha256:a063cbfa0328508d6c6264ef5da1b896549d580ed122db1a3c0b2803c47f544d"
+    },
     {
       "schemaVersion": "1",
       "type": "model-provider",
@@ -604,6 +794,340 @@
     {
       "schemaVersion": "1",
       "type": "model-provider",
+      "id": "arcee",
+      "name": "Arcee AI",
+      "version": "1.0.0",
+      "homepage": "https://www.arcee.ai/",
+      "description": "Arcee AI — small, specialized models plus an automatic model router.",
+      "docs": "https://docs.arcee.ai/",
+      "apiBase": "https://api.arcee.ai/api/v1",
+      "envKey": "ARCEEAI_API_KEY",
+      "models": [
+        {
+          "name": "auto",
+          "label": "Arcee Conductor (auto)",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Router that picks the best Arcee model per request."
+        },
+        {
+          "name": "virtuoso-large",
+          "label": "Virtuoso Large",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "coder-large",
+          "label": "Coder Large",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/arcee.json",
+      "checksum": "sha256:9ebbb33bb134922c2a81d2f6afc2c20aa424c847ab408bdc3b69d384d89593be"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "azure-foundry",
+      "name": "Azure Foundry",
+      "version": "1.0.0",
+      "homepage": "https://ai.azure.com/",
+      "description": "Microsoft Foundry — OpenAI-compatible endpoint. Base URL is per-resource (user-supplied at setup).",
+      "docs": "https://learn.microsoft.com/azure/ai-foundry/",
+      "envKey": "AZURE_FOUNDRY_API_KEY",
+      "models": [
+        {
+          "name": "gpt-4o",
+          "label": "GPT-4o",
+          "context": 128000,
+          "maxOutput": 16384,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ],
+          "description": "Representative model; Azure Foundry deployments are per-resource."
+        }
+      ],
+      "icon": null,
+      "path": "models/azure-foundry.json",
+      "checksum": "sha256:894e1fd814940d5abd56de3ce6000af61b594008848e5c8e73f9d7bb29524fc8"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "bedrock",
+      "name": "AWS Bedrock",
+      "version": "1.0.0",
+      "homepage": "https://aws.amazon.com/bedrock/",
+      "description": "Amazon Bedrock — managed access to foundation models via the AWS SDK (no REST API key).",
+      "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "apiBase": "https://bedrock-runtime.us-east-1.amazonaws.com",
+      "models": [
+        {
+          "name": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+          "label": "Claude 3.5 Sonnet (Bedrock)",
+          "context": 200000,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        },
+        {
+          "name": "meta.llama3-3-70b-instruct-v1:0",
+          "label": "Llama 3.3 70B (Bedrock)",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "amazon.nova-pro-v1:0",
+          "label": "Amazon Nova Pro",
+          "context": 300000,
+          "maxOutput": 5120,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/bedrock.json",
+      "checksum": "sha256:a6bbbf557e7e9cad0a6e8d019be7e27fa53336e96273f42d8d0288c52472ad11"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "copilot",
+      "name": "GitHub Copilot / Models",
+      "version": "1.0.0",
+      "homepage": "https://github.com/features/copilot",
+      "description": "GitHub Copilot / GitHub Models — multi-vendor catalog behind a GitHub token.",
+      "docs": "https://docs.github.com/en/github-models",
+      "apiBase": "https://api.githubcopilot.com",
+      "envKey": "COPILOT_GITHUB_TOKEN",
+      "models": [
+        {
+          "name": "gpt-4o",
+          "label": "GPT-4o",
+          "context": 128000,
+          "maxOutput": 16384,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        },
+        {
+          "name": "o4-mini",
+          "label": "o4-mini",
+          "context": 200000,
+          "maxOutput": 100000,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        },
+        {
+          "name": "claude-3.5-sonnet",
+          "label": "Claude 3.5 Sonnet",
+          "context": 200000,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/copilot.json",
+      "checksum": "sha256:d86fa24b9405c464079be6f25da243a18441f532ddd3aace876e6e0e3eaaf857"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "copilot-acp",
+      "name": "GitHub Copilot (ACP)",
+      "version": "1.0.0",
+      "homepage": "https://github.com/features/copilot",
+      "description": "GitHub Copilot via an external ACP subprocess. Model listing is handled by the subprocess.",
+      "docs": "https://docs.github.com/copilot",
+      "apiBase": "acp://copilot",
+      "models": [
+        {
+          "name": "gpt-4o",
+          "label": "GPT-4o",
+          "context": 128000,
+          "maxOutput": 16384,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ],
+          "description": "Representative model; the ACP subprocess manages the live catalog."
+        }
+      ],
+      "icon": null,
+      "path": "models/copilot-acp.json",
+      "checksum": "sha256:861e9c91096c7e3189b46d0a8c928224fb081c974259c7250b22a9356182c394"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "custom",
+      "name": "Custom / Local",
+      "version": "1.0.0",
+      "homepage": "https://ollama.com/",
+      "description": "Any OpenAI-compatible endpoint registered as 'custom', including local Ollama, vLLM and llama.cpp servers. Base URL and models are user-configured.",
+      "docs": "https://github.com/ollama/ollama/blob/main/docs/openai.md",
+      "models": [
+        {
+          "name": "llama3.1",
+          "label": "Llama 3.1 (local)",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ],
+          "description": "Representative local model; actual models depend on the user's endpoint."
+        }
+      ],
+      "icon": null,
+      "path": "models/custom.json",
+      "checksum": "sha256:c69e03d63a4217a88c5e268a38c7b12e40be83fc5ad43b2d3fd7823241852d81"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
       "id": "deepseek",
       "name": "DeepSeek",
       "icon": "models/icons/deepseek.svg",
@@ -914,6 +1438,98 @@
       ],
       "path": "models/deepseek.json",
       "checksum": "sha256:69f66b1325c362de4467d983117ef190dec4c57f1d90ec6557398b4c2d01a81e"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "gmi",
+      "name": "GMI Cloud",
+      "version": "1.0.0",
+      "homepage": "https://www.gmicloud.ai/",
+      "description": "GMI Cloud — multi-model direct API serving open-weight models with slash-form IDs.",
+      "docs": "https://docs.gmicloud.ai/",
+      "apiBase": "https://api.gmi-serving.com/v1",
+      "envKey": "GMI_API_KEY",
+      "models": [
+        {
+          "name": "deepseek-ai/DeepSeek-V3",
+          "label": "DeepSeek V3",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "deepseek-ai/DeepSeek-R1",
+          "label": "DeepSeek R1",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        },
+        {
+          "name": "meta-llama/Llama-3.3-70B-Instruct",
+          "label": "Llama 3.3 70B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "Qwen/Qwen2.5-72B-Instruct",
+          "label": "Qwen2.5 72B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/gmi.json",
+      "checksum": "sha256:bfbd00b28c6cec39bc0d3a3c5eaa8e22969cabbb19850b2d47d9e13e520dad37"
     },
     {
       "schemaVersion": "1",
@@ -1398,6 +2014,364 @@
     {
       "schemaVersion": "1",
       "type": "model-provider",
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "version": "1.0.0",
+      "homepage": "https://huggingface.co/",
+      "description": "Hugging Face Inference Providers router — OpenAI-compatible access to open-weight models.",
+      "docs": "https://huggingface.co/docs/inference-providers",
+      "apiBase": "https://router.huggingface.co/v1",
+      "envKey": "HF_TOKEN",
+      "models": [
+        {
+          "name": "meta-llama/Llama-3.3-70B-Instruct",
+          "label": "Llama 3.3 70B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "Qwen/Qwen2.5-72B-Instruct",
+          "label": "Qwen2.5 72B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "deepseek-ai/DeepSeek-V3",
+          "label": "DeepSeek V3",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/huggingface.json",
+      "checksum": "sha256:a6b1bbb44a75517e07d12e60c13f91dffa80021efc5bbde434c6f8c8f8a6471d"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "kilocode",
+      "name": "Kilo Code",
+      "version": "1.0.0",
+      "homepage": "https://kilo.ai/",
+      "description": "Kilo Code — an AI coding gateway routing to many upstream models with slash-form IDs.",
+      "docs": "https://kilocode.ai/docs",
+      "apiBase": "https://api.kilo.ai/api/gateway",
+      "envKey": "KILOCODE_API_KEY",
+      "models": [
+        {
+          "name": "anthropic/claude-3.5-sonnet",
+          "label": "Claude 3.5 Sonnet",
+          "context": 200000,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        },
+        {
+          "name": "google/gemini-2.0-flash",
+          "label": "Gemini 2.0 Flash",
+          "context": 1048576,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/kilocode.json",
+      "checksum": "sha256:e24e5ad2fa046fefa6093ea3ebbcd2d26c29e697164a61769f0784b8d9d1e036"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "kimi-coding",
+      "name": "Kimi / Moonshot",
+      "version": "1.0.0",
+      "homepage": "https://platform.moonshot.ai/",
+      "description": "Moonshot AI Kimi models (international endpoint), OpenAI-compatible.",
+      "docs": "https://platform.moonshot.ai/docs",
+      "apiBase": "https://api.moonshot.ai/v1",
+      "envKey": "KIMI_API_KEY",
+      "models": [
+        {
+          "name": "kimi-k2-0711-preview",
+          "label": "Kimi K2",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Mixture-of-experts model tuned for agentic tool use."
+        },
+        {
+          "name": "kimi-latest",
+          "label": "Kimi (latest)",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        },
+        {
+          "name": "moonshot-v1-128k",
+          "label": "Moonshot v1 128k",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "moonshot-v1-32k",
+          "label": "Moonshot v1 32k",
+          "context": 32768,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "kimi-thinking-preview",
+          "label": "Kimi Thinking (preview)",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/kimi-coding.json",
+      "checksum": "sha256:5a31e5772f9ce393be8c1401f76f0d83d6bcc196e1c533b44068eb7450ed53cc"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "kimi-coding-cn",
+      "name": "Kimi / Moonshot (China)",
+      "version": "1.0.0",
+      "homepage": "https://platform.moonshot.cn/",
+      "description": "Moonshot AI Kimi models (China endpoint), OpenAI-compatible.",
+      "docs": "https://platform.moonshot.cn/docs",
+      "apiBase": "https://api.moonshot.cn/v1",
+      "envKey": "KIMI_CN_API_KEY",
+      "models": [
+        {
+          "name": "kimi-k2-0711-preview",
+          "label": "Kimi K2",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Mixture-of-experts model tuned for agentic tool use."
+        },
+        {
+          "name": "kimi-latest",
+          "label": "Kimi (latest)",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        },
+        {
+          "name": "moonshot-v1-128k",
+          "label": "Moonshot v1 128k",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "moonshot-v1-32k",
+          "label": "Moonshot v1 32k",
+          "context": 32768,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "kimi-thinking-preview",
+          "label": "Kimi Thinking (preview)",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/kimi-coding-cn.json",
+      "checksum": "sha256:cd731556fd0b0938d8624489bbf2d8f7014170ac1e069ccc1e066683811f0d8a"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
       "id": "meta",
       "name": "Meta Llama",
       "icon": "models/icons/meta.svg",
@@ -1520,6 +2494,233 @@
     {
       "schemaVersion": "1",
       "type": "model-provider",
+      "id": "minimax",
+      "name": "MiniMax",
+      "version": "1.0.0",
+      "homepage": "https://www.minimax.io/",
+      "description": "MiniMax models via the Anthropic-compatible endpoint (international).",
+      "docs": "https://www.minimax.io/platform/document",
+      "apiBase": "https://api.minimax.io/anthropic",
+      "envKey": "MINIMAX_API_KEY",
+      "models": [
+        {
+          "name": "MiniMax-M2",
+          "label": "MiniMax M2",
+          "context": 204800,
+          "maxOutput": 16384,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Agent/coding-focused MoE model."
+        },
+        {
+          "name": "MiniMax-M1",
+          "label": "MiniMax M1",
+          "context": 1000000,
+          "maxOutput": 40960,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ],
+          "description": "Long-context reasoning model."
+        },
+        {
+          "name": "MiniMax-Text-01",
+          "label": "MiniMax Text 01",
+          "context": 1000192,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/minimax.json",
+      "checksum": "sha256:de790e517cba48ba2f99baeb6cc75c1922a2b83d6092855d0d9ea73b986ea1ed"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "minimax-cn",
+      "name": "MiniMax (China)",
+      "version": "1.0.0",
+      "homepage": "https://www.minimaxi.com/",
+      "description": "MiniMax models via the Anthropic-compatible endpoint (China).",
+      "docs": "https://platform.minimaxi.com/document",
+      "apiBase": "https://api.minimaxi.com/anthropic",
+      "envKey": "MINIMAX_CN_API_KEY",
+      "models": [
+        {
+          "name": "MiniMax-M2",
+          "label": "MiniMax M2",
+          "context": 204800,
+          "maxOutput": 16384,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Agent/coding-focused MoE model."
+        },
+        {
+          "name": "MiniMax-M1",
+          "label": "MiniMax M1",
+          "context": 1000000,
+          "maxOutput": 40960,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ],
+          "description": "Long-context reasoning model."
+        },
+        {
+          "name": "MiniMax-Text-01",
+          "label": "MiniMax Text 01",
+          "context": 1000192,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/minimax-cn.json",
+      "checksum": "sha256:08d187019bef0488f116bd963351ae34c9397b5c8899872b035b442804f2c9c9"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "minimax-oauth",
+      "name": "MiniMax (OAuth)",
+      "version": "1.0.0",
+      "homepage": "https://www.minimax.io/",
+      "description": "MiniMax via OAuth browser flow — no API key required. Anthropic-compatible endpoint.",
+      "docs": "https://www.minimax.io/platform/document",
+      "apiBase": "https://api.minimax.io/anthropic",
+      "models": [
+        {
+          "name": "MiniMax-M2",
+          "label": "MiniMax M2",
+          "context": 204800,
+          "maxOutput": 16384,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Agent/coding-focused MoE model."
+        },
+        {
+          "name": "MiniMax-M1",
+          "label": "MiniMax M1",
+          "context": 1000000,
+          "maxOutput": 40960,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ],
+          "description": "Long-context reasoning model."
+        },
+        {
+          "name": "MiniMax-Text-01",
+          "label": "MiniMax Text 01",
+          "context": 1000192,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/minimax-oauth.json",
+      "checksum": "sha256:0810ee7b132b5a019451b699a5400b391addef7e77115ba314ff1765c18153dc"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
       "id": "mistral",
       "name": "Mistral AI",
       "icon": "models/icons/mistral.svg",
@@ -1626,6 +2827,297 @@
       ],
       "path": "models/mistral.json",
       "checksum": "sha256:d39621909531ee20eac3ae238e316a5914c58b01b62162667f087129dee73dbe"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "nous",
+      "name": "Nous Research",
+      "version": "1.0.0",
+      "homepage": "https://nousresearch.com/",
+      "description": "Nous Research Inference Portal — the Hermes model family.",
+      "docs": "https://nousresearch.com/",
+      "apiBase": "https://inference.nousresearch.com/v1",
+      "envKey": "NOUS_API_KEY",
+      "models": [
+        {
+          "name": "hermes-3-llama-3.1-405b",
+          "label": "Hermes 3 Llama 3.1 405B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "hermes-3-llama-3.1-70b",
+          "label": "Hermes 3 Llama 3.1 70B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/nous.json",
+      "checksum": "sha256:4c6f9a6e45ca8e2ca0a7c8539e04ec67ae490720e11b046896b1e33a4e2a3b21"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "novita",
+      "name": "NovitaAI",
+      "version": "1.0.0",
+      "homepage": "https://novita.ai/",
+      "description": "NovitaAI — AI-native cloud serving open-weight models via an OpenAI-compatible API.",
+      "docs": "https://novita.ai/docs",
+      "apiBase": "https://api.novita.ai/openai/v1",
+      "envKey": "NOVITA_API_KEY",
+      "models": [
+        {
+          "name": "deepseek/deepseek-v3-0324",
+          "label": "DeepSeek V3 (0324)",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "deepseek/deepseek-r1",
+          "label": "DeepSeek R1",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        },
+        {
+          "name": "meta-llama/llama-3.3-70b-instruct",
+          "label": "Llama 3.3 70B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "qwen/qwen2.5-72b-instruct",
+          "label": "Qwen2.5 72B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/novita.json",
+      "checksum": "sha256:fadeaeb39d001bb240dc3805c4883aaf6cbbb5c52cbd8bf1512c788bf00a544d"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "nvidia",
+      "name": "NVIDIA NIM",
+      "version": "1.0.0",
+      "homepage": "https://build.nvidia.com/",
+      "description": "NVIDIA NIM — accelerated inference for open models, OpenAI-compatible.",
+      "docs": "https://docs.nvidia.com/nim/",
+      "apiBase": "https://integrate.api.nvidia.com/v1",
+      "envKey": "NVIDIA_API_KEY",
+      "models": [
+        {
+          "name": "nvidia/llama-3.1-nemotron-70b-instruct",
+          "label": "Llama 3.1 Nemotron 70B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "meta/llama-3.3-70b-instruct",
+          "label": "Llama 3.3 70B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "deepseek-ai/deepseek-r1",
+          "label": "DeepSeek R1",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/nvidia.json",
+      "checksum": "sha256:cb846360f8a9332c27d86fd5f9a2bc429c21983715aabb341bf02c4230906579"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "ollama-cloud",
+      "name": "Ollama Cloud",
+      "version": "1.0.0",
+      "homepage": "https://ollama.com/cloud",
+      "description": "Ollama Cloud — hosted large open-weight models via an OpenAI-compatible endpoint.",
+      "docs": "https://docs.ollama.com/cloud",
+      "apiBase": "https://ollama.com/v1",
+      "envKey": "OLLAMA_API_KEY",
+      "models": [
+        {
+          "name": "gpt-oss:120b",
+          "label": "gpt-oss 120B",
+          "context": 131072,
+          "maxOutput": 32768,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        },
+        {
+          "name": "deepseek-v3.1:671b",
+          "label": "DeepSeek V3.1 671B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        },
+        {
+          "name": "qwen3:235b",
+          "label": "Qwen3 235B",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/ollama-cloud.json",
+      "checksum": "sha256:4485e988909a360ee2cb75a45d3380084358f1d99f30f715ecb041dd2eae71a8"
     },
     {
       "schemaVersion": "1",
@@ -2375,6 +3867,155 @@
       ],
       "path": "models/openai.json",
       "checksum": "sha256:14525829025f1f0194050b96028ae3d8dacdac08ff128dd2bdf9a7a199377b78"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "openai-codex",
+      "name": "OpenAI Codex",
+      "version": "1.0.0",
+      "homepage": "https://openai.com/codex/",
+      "description": "OpenAI Codex via the Responses API (ChatGPT OAuth). No API key — uses the Codex sign-in.",
+      "docs": "https://platform.openai.com/docs/guides/tools",
+      "apiBase": "https://chatgpt.com/backend-api/codex",
+      "models": [
+        {
+          "name": "gpt-5-codex",
+          "label": "GPT-5 Codex",
+          "context": 400000,
+          "maxOutput": 128000,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ],
+          "description": "Agentic coding model served through the Codex Responses API."
+        }
+      ],
+      "icon": null,
+      "path": "models/openai-codex.json",
+      "checksum": "sha256:60f8997e20b9b9dc196b222c32a2648250aced1ceaede4f4de45c06f31c4b70f"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "opencode-go",
+      "name": "OpenCode Go",
+      "version": "1.0.0",
+      "homepage": "https://opencode.ai/",
+      "description": "OpenCode Go — a relay serving open-weight models (GLM, Kimi, MiniMax).",
+      "docs": "https://opencode.ai/docs/zen/",
+      "apiBase": "https://opencode.ai/zen/go/v1",
+      "envKey": "OPENCODE_GO_API_KEY",
+      "models": [
+        {
+          "name": "glm-4.6",
+          "label": "GLM-4.6",
+          "context": 200000,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "kimi-k2",
+          "label": "Kimi K2",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/opencode-go.json",
+      "checksum": "sha256:d9790b378b254b61d925d56fa8ee502c9c4acd1ae94d7da63be28562ab89361e"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "opencode-zen",
+      "name": "OpenCode Zen",
+      "version": "1.0.0",
+      "homepage": "https://opencode.ai/",
+      "description": "OpenCode Zen — a curated multi-vendor relay (Claude, GPT-5, and more).",
+      "docs": "https://opencode.ai/docs/zen/",
+      "apiBase": "https://opencode.ai/zen/v1",
+      "envKey": "OPENCODE_ZEN_API_KEY",
+      "models": [
+        {
+          "name": "claude-sonnet-4",
+          "label": "Claude Sonnet 4",
+          "context": 200000,
+          "maxOutput": 64000,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "reasoning",
+            "streaming"
+          ]
+        },
+        {
+          "name": "gpt-5",
+          "label": "GPT-5",
+          "context": 400000,
+          "maxOutput": 128000,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "reasoning",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/opencode-zen.json",
+      "checksum": "sha256:8aebddaa4dbb00a5eec48fc0d8c632a31ffe1a372f9879f5fd378c8384134561"
     },
     {
       "schemaVersion": "1",
@@ -4140,6 +5781,155 @@
     {
       "schemaVersion": "1",
       "type": "model-provider",
+      "id": "qwen-oauth",
+      "name": "Qwen Portal",
+      "version": "1.0.0",
+      "homepage": "https://chat.qwen.ai/",
+      "description": "Qwen Portal (qwen-code) via OAuth — Qwen coding models, no API key required.",
+      "docs": "https://github.com/QwenLM/qwen-code",
+      "apiBase": "https://portal.qwen.ai/v1",
+      "envKey": "QWEN_API_KEY",
+      "models": [
+        {
+          "name": "qwen3-coder-plus",
+          "label": "Qwen3 Coder Plus",
+          "context": 1000000,
+          "maxOutput": 65536,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Agentic coding model."
+        },
+        {
+          "name": "qwen3-coder-flash",
+          "label": "Qwen3 Coder Flash",
+          "context": 1000000,
+          "maxOutput": 65536,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/qwen-oauth.json",
+      "checksum": "sha256:2c68c4b6108b3a97b1ca370ad6210a4b26751e1dd25d47a0de43b58ff8d78424"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "stepfun",
+      "name": "StepFun",
+      "version": "1.0.0",
+      "homepage": "https://www.stepfun.com/",
+      "description": "StepFun (阶跃星辰) — the Step model family, OpenAI-compatible.",
+      "docs": "https://platform.stepfun.com/docs/overview/concept",
+      "apiBase": "https://api.stepfun.ai/step_plan/v1",
+      "envKey": "STEPFUN_API_KEY",
+      "models": [
+        {
+          "name": "step-2-16k",
+          "label": "Step-2 16k",
+          "context": 16384,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "step-1-128k",
+          "label": "Step-1 128k",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "step-1v-8k",
+          "label": "Step-1V 8k",
+          "context": 8192,
+          "maxOutput": 4096,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ]
+        },
+        {
+          "name": "step-2-mini",
+          "label": "Step-2 Mini",
+          "context": 8192,
+          "maxOutput": 4096,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/stepfun.json",
+      "checksum": "sha256:ff8149feb467aa7b238f9ea6ea552fb95a6ed36b39172158cfc63f6b2baa61bf"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
       "id": "xai",
       "name": "xAI",
       "icon": "models/icons/xai.svg",
@@ -4281,6 +6071,174 @@
       ],
       "path": "models/xai.json",
       "checksum": "sha256:8c8084e63e8e7cb07648b3d6a2089a53e4664bcfabee88e981f2ae3ce1ec0baf"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "xiaomi",
+      "name": "Xiaomi MiMo",
+      "version": "1.0.0",
+      "homepage": "https://xiaomimimo.com/",
+      "description": "Xiaomi MiMo — the MiMo model family, OpenAI-compatible.",
+      "docs": "https://huggingface.co/XiaomiMiMo",
+      "apiBase": "https://api.xiaomimimo.com/v1",
+      "envKey": "XIAOMI_API_KEY",
+      "models": [
+        {
+          "name": "mimo-7b-rl",
+          "label": "MiMo 7B RL",
+          "context": 32768,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "mimo-vl-7b-rl",
+          "label": "MiMo VL 7B RL",
+          "context": 32768,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "vision",
+            "streaming"
+          ],
+          "description": "Vision-capable MiMo variant."
+        }
+      ],
+      "icon": null,
+      "path": "models/xiaomi.json",
+      "checksum": "sha256:948ecada561021ff965c3961fb07fec788c26410c51bdf0f5d296f191eb512ab"
+    },
+    {
+      "schemaVersion": "1",
+      "type": "model-provider",
+      "id": "zai",
+      "name": "Z.AI (GLM)",
+      "version": "1.0.0",
+      "homepage": "https://z.ai/",
+      "description": "Z.AI / Zhipu AI — the GLM model family, OpenAI-compatible.",
+      "docs": "https://docs.z.ai/",
+      "apiBase": "https://api.z.ai/api/paas/v4",
+      "envKey": "GLM_API_KEY",
+      "models": [
+        {
+          "name": "glm-4.6",
+          "label": "GLM-4.6",
+          "context": 200000,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ],
+          "description": "Flagship GLM model with strong agentic/coding ability."
+        },
+        {
+          "name": "glm-4.5",
+          "label": "GLM-4.5",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "glm-4.5-air",
+          "label": "GLM-4.5 Air",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        },
+        {
+          "name": "glm-4-flash",
+          "label": "GLM-4 Flash",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming"
+          ]
+        },
+        {
+          "name": "glm-4-plus",
+          "label": "GLM-4 Plus",
+          "context": 131072,
+          "maxOutput": 8192,
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "capabilities": [
+            "tools",
+            "streaming",
+            "json_mode"
+          ]
+        }
+      ],
+      "icon": null,
+      "path": "models/zai.json",
+      "checksum": "sha256:eb844b979d4281c9b0a27cf0f7eb93ee9766a3271706c5dfe74ae672f6bc87d3"
     }
   ]
 }
