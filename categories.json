@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-09-20T08:49:21.1735571Z",
+  "generated": "2026-09-20T09:32:54.7698678Z",
   "types": [
     {
       "type": "agent",
@@ -14,15 +14,11 @@
     },
     {
       "type": "skill",
-      "count": 368,
+      "count": 96,
       "categories": [
         {
-          "name": "apple",
-          "count": 5
-        },
-        {
           "name": "autonomous-ai-agents",
-          "count": 7
+          "count": 3
         },
         {
           "name": "blockchain",
@@ -30,19 +26,11 @@
         },
         {
           "name": "creative",
-          "count": 21
+          "count": 1
         },
         {
           "name": "data-science",
-          "count": 9
-        },
-        {
-          "name": "design",
-          "count": 14
-        },
-        {
-          "name": "devops",
-          "count": 36
+          "count": 2
         },
         {
           "name": "diagramming",
@@ -53,64 +41,24 @@
           "count": 1
         },
         {
-          "name": "domain",
-          "count": 20
-        },
-        {
           "name": "email",
           "count": 1
-        },
-        {
-          "name": "gaming",
-          "count": 3
-        },
-        {
-          "name": "gifs",
-          "count": 1
-        },
-        {
-          "name": "github",
-          "count": 8
         },
         {
           "name": "mcp",
           "count": 1
         },
         {
-          "name": "media",
-          "count": 8
-        },
-        {
-          "name": "mlops",
-          "count": 27
-        },
-        {
           "name": "note-taking",
           "count": 2
-        },
-        {
-          "name": "productivity",
-          "count": 34
-        },
-        {
-          "name": "red-teaming",
-          "count": 13
         },
         {
           "name": "research",
           "count": 25
         },
         {
-          "name": "smart-home",
-          "count": 1
-        },
-        {
           "name": "social-media",
           "count": 1
-        },
-        {
-          "name": "software-development",
-          "count": 71
         },
         {
           "name": "trading",
