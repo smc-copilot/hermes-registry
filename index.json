@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-09-20T09:32:54.7698678Z",
-  "count": 179,
+  "generated": "2026-09-20T09:38:50.7164315Z",
+  "count": 143,
   "entries": [
     {
       "id": "accessibility-auditor",
@@ -409,155 +409,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "ableton",
-      "type": "mcp",
-      "category": null,
-      "name": "Ableton Live",
-      "version": "1.0.0",
-      "description": "Control Ableton Live — create tracks, MIDI, and devices, and manipulate a live set. Requires Ableton plus a remote-script bridge.",
-      "tags": [
-        "creator",
-        "music",
-        "ableton",
-        "audio"
-      ],
-      "author": "ahujasid",
-      "license": "MIT",
-      "source": "https://github.com/ahujasid/ableton-mcp",
-      "path": "mcp/ableton",
-      "icon": "mcp/ableton/icon.svg",
-      "checksum": "sha256:29616d1aa03e1f7449d5cd6e25b4bfc163e18c36fdefbd2dbfda992c062768bd",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "airtable",
-      "type": "mcp",
-      "category": null,
-      "name": "Airtable",
-      "version": "1.0.0",
-      "description": "Read and write records, bases, and schema in Airtable. Community-maintained — scope the PAT to specific bases.",
-      "tags": [
-        "airtable",
-        "database",
-        "no-code",
-        "productivity"
-      ],
-      "author": "domdomegg",
-      "license": "MIT",
-      "source": "https://github.com/domdomegg/airtable-mcp-server",
-      "path": "mcp/airtable",
-      "icon": "mcp/airtable/icon.svg",
-      "checksum": "sha256:2472fea49301481026f4fd9c739c29281bce7082abcae98069b2f1aff64e1162",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "alpaca",
-      "type": "mcp",
-      "category": null,
-      "name": "Alpaca",
-      "version": "1.0.0",
-      "description": "Trade US equities, ETFs, options, and crypto and manage a portfolio via Alpaca's official server. Start in the paper environment and review every order.",
-      "tags": [
-        "trading",
-        "stocks",
-        "alpaca",
-        "markets"
-      ],
-      "author": "Alpaca",
-      "license": "MIT",
-      "source": "https://github.com/alpacahq/alpaca-mcp-server",
-      "path": "mcp/alpaca",
-      "icon": "mcp/alpaca/icon.svg",
-      "checksum": "sha256:422afaf9ca0623a7b7d1cef8fb0abd0d38c06c58018e343a5d98937fc9416dde",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "asana",
-      "type": "mcp",
-      "category": null,
-      "name": "Asana",
-      "version": "1.0.0",
-      "description": "Tasks, projects, and workload in Asana via the official v2 remote server. Inherits your Asana permissions.",
-      "tags": [
-        "project-management",
-        "tasks",
-        "asana",
-        "productivity"
-      ],
-      "author": "Asana",
-      "license": null,
-      "source": "https://developers.asana.com/docs/using-asanas-mcp-server",
-      "path": "mcp/asana",
-      "icon": "mcp/asana/icon.svg",
-      "checksum": "sha256:a8dc07365a9e63f58f60a0bfa65e3f601e1d455f85083d082dedf6852736c8d2",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "atlassian",
-      "type": "mcp",
-      "category": null,
-      "name": "Jira & Confluence (Atlassian)",
-      "version": "1.0.0",
-      "description": "Jira issues, Confluence docs, and Compass via Atlassian's official Rovo remote server. OAuth 2.1; respects your access controls.",
-      "tags": [
-        "jira",
-        "confluence",
-        "atlassian",
-        "project-management"
-      ],
-      "author": "Atlassian",
-      "license": null,
-      "source": "https://www.atlassian.com/platform/remote-mcp-server",
-      "path": "mcp/atlassian",
-      "icon": "mcp/atlassian/icon.svg",
-      "checksum": "sha256:140320e80e0f7182daf069af3ed04a3297799a98993db34921f11deb1d2462b2",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "aws",
-      "type": "mcp",
-      "category": null,
-      "name": "AWS",
-      "version": "1.0.0",
-      "description": "AWS Labs core MCP server — entry point to per-service AWS servers (EC2, S3, Lambda, RDS, …). Scope IAM tightly.",
-      "tags": [
-        "cloud",
-        "aws",
-        "infra"
-      ],
-      "author": "AWS Labs",
-      "license": "Apache-2.0",
-      "source": "https://github.com/awslabs/mcp",
-      "path": "mcp/aws",
-      "icon": "mcp/aws/icon.svg",
-      "checksum": "sha256:ce1b0ee7e40fa206eb5c8e6bb2cbe5b74c314a8bffbe20a233a7805a822d3990",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "base",
       "type": "mcp",
       "category": null,
@@ -583,31 +434,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "blender",
-      "type": "mcp",
-      "category": null,
-      "name": "Blender",
-      "version": "1.0.0",
-      "description": "Drive Blender's 3D engine from prompts — scenes, objects, materials, lighting. Requires Blender open with the companion addon running.",
-      "tags": [
-        "creator",
-        "3d",
-        "blender",
-        "modeling"
-      ],
-      "author": "ahujasid",
-      "license": "MIT",
-      "source": "https://github.com/ahujasid/blender-mcp",
-      "path": "mcp/blender",
-      "icon": "mcp/blender/icon.svg",
-      "checksum": "sha256:59c31e4f4c57e09ac4d2043a000d6543fff4b152439c24a8f9b839ef8f11dca7",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "brave-search",
       "type": "mcp",
       "category": null,
@@ -624,106 +450,6 @@
       "path": "mcp/brave-search",
       "icon": "mcp/brave-search/icon.svg",
       "checksum": "sha256:f67332401823c382d4aa7ac2e2eaaef19d5d2b41c3db1a7e168e451272bca06c",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "canva",
-      "type": "mcp",
-      "category": null,
-      "name": "Canva",
-      "version": "1.0.0",
-      "description": "Generate and edit designs from templates in Canva. OAuth on first call; inherits your Canva account access.",
-      "tags": [
-        "creator",
-        "design",
-        "canva",
-        "graphics"
-      ],
-      "author": "Canva",
-      "license": null,
-      "source": "https://www.canva.dev/docs/apps/mcp-server/",
-      "path": "mcp/canva",
-      "icon": "mcp/canva/icon.svg",
-      "checksum": "sha256:3dfdb7df07f25d493657704ae92b2467f11e5b536374a5347e9d3ca35b21eb0f",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "ccxt",
-      "type": "mcp",
-      "category": null,
-      "name": "CCXT",
-      "version": "1.0.0",
-      "description": "Unified read access to 20+ crypto exchanges (Binance, Coinbase, Kraken, Bybit) for market data. Enabling trade execution is real-money territory.",
-      "tags": [
-        "trading",
-        "crypto",
-        "exchanges",
-        "markets"
-      ],
-      "author": "lazy-dinosaur",
-      "license": "MIT",
-      "source": "https://github.com/lazy-dinosaur/ccxt-mcp",
-      "path": "mcp/ccxt",
-      "icon": "mcp/ccxt/icon.svg",
-      "checksum": "sha256:95d74b54a586023ef7ba1e54bf707e835b276e2d933f2aef5d564f45da7a7216",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "cloudflare",
-      "type": "mcp",
-      "category": null,
-      "name": "Cloudflare",
-      "version": "1.0.0",
-      "description": "Workers, DNS, R2, KV, and Zero Trust across Cloudflare's API via search/execute tools. Authorize and pick scopes on connect.",
-      "tags": [
-        "cloud",
-        "infra",
-        "cloudflare",
-        "dns"
-      ],
-      "author": "Cloudflare",
-      "license": "Apache-2.0",
-      "source": "https://github.com/cloudflare/mcp",
-      "path": "mcp/cloudflare",
-      "icon": "mcp/cloudflare/icon.svg",
-      "checksum": "sha256:b2d6a07b0681f1fc2dd254e1a1a875b967a7cb900767224bfbd336375920c130",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "coingecko",
-      "type": "mcp",
-      "category": null,
-      "name": "CoinGecko",
-      "version": "1.0.0",
-      "description": "Crypto prices, market caps, and historical data via CoinGecko's official server. Free tier is rate-limited; fine for research.",
-      "tags": [
-        "trading",
-        "crypto",
-        "market-data",
-        "markets"
-      ],
-      "author": "CoinGecko",
-      "license": null,
-      "source": "https://docs.coingecko.com",
-      "path": "mcp/coingecko",
-      "icon": "mcp/coingecko/icon.svg",
-      "checksum": "sha256:c9e4298f5dd8f1dfa8244c4eb91e9268e5ae7ac11e01f10ee56c219933c603bb",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=0.6.0"
@@ -755,131 +481,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "davinci-resolve",
-      "type": "mcp",
-      "category": null,
-      "name": "DaVinci Resolve",
-      "version": "1.0.0",
-      "description": "Control DaVinci Resolve Studio via its scripting API — timeline edits, media pool, render setup, color, Fusion, Fairlight. Requires Resolve open with external scripting set to Local.",
-      "tags": [
-        "creator",
-        "video",
-        "editing",
-        "davinci-resolve"
-      ],
-      "author": "samuelgursky",
-      "license": "MIT",
-      "source": "https://github.com/samuelgursky/davinci-resolve-mcp",
-      "path": "mcp/davinci-resolve",
-      "icon": "mcp/davinci-resolve/icon.svg",
-      "checksum": "sha256:09bcc9b8f0566e8353d14f53f13b322f6a775ad07c44b46a75dc63cdb6eb3406",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "docker-hub",
-      "type": "mcp",
-      "category": null,
-      "name": "Docker Hub",
-      "version": "1.0.0",
-      "description": "Search images and manage tags on Docker Hub. Community-maintained — review the source before granting write access.",
-      "tags": [
-        "docker",
-        "containers",
-        "registry",
-        "devops"
-      ],
-      "author": "Community",
-      "license": null,
-      "source": "https://github.com/ckreiling/mcp-server-docker",
-      "path": "mcp/docker-hub",
-      "icon": "mcp/docker-hub/icon.svg",
-      "checksum": "sha256:51c6bb12b975e20bb4864decae2b308582b3f91a9ea780dd960dbd599801adac",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "dune",
-      "type": "mcp",
-      "category": null,
-      "name": "Dune",
-      "version": "1.0.0",
-      "description": "Run and read Dune Analytics queries from the agent. API credits are metered — a chatty agent burns a free tier fast.",
-      "tags": [
-        "web3",
-        "blockchain",
-        "analytics",
-        "data"
-      ],
-      "author": "Dune",
-      "license": null,
-      "source": "https://dune.com/docs/api/",
-      "path": "mcp/dune",
-      "icon": "mcp/dune/icon.svg",
-      "checksum": "sha256:9848def351234bc930e56d498c52adb878218fc0d5378866faff0a9c339bba30",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "elevenlabs",
-      "type": "mcp",
-      "category": null,
-      "name": "ElevenLabs",
-      "version": "1.0.0",
-      "description": "Official text-to-speech and audio server — generate speech, clone voices, transcribe. Only clone voices you're allowed to.",
-      "tags": [
-        "creator",
-        "audio",
-        "tts",
-        "voice"
-      ],
-      "author": "ElevenLabs",
-      "license": "MIT",
-      "source": "https://github.com/elevenlabs/elevenlabs-mcp",
-      "path": "mcp/elevenlabs",
-      "icon": "mcp/elevenlabs/icon.svg",
-      "checksum": "sha256:1bd06a490df5deb9a3a1f944780a142ee07daaf72ba5358425cca23a9d902193",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "etherscan",
-      "type": "mcp",
-      "category": null,
-      "name": "Etherscan",
-      "version": "1.0.0",
-      "description": "Block explorer access — contract verification, transaction lookups, ABI fetch. Read-only, fine to leave on.",
-      "tags": [
-        "web3",
-        "blockchain",
-        "ethereum",
-        "explorer"
-      ],
-      "author": "Community",
-      "license": null,
-      "source": "https://docs.etherscan.io",
-      "path": "mcp/etherscan",
-      "icon": "mcp/etherscan/icon.svg",
-      "checksum": "sha256:0d1b9abbdb497d59b8f444ab260dbde5085b76fece8dbba2b5f33d8afc7e80d4",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "fetch",
       "type": "mcp",
       "category": null,
@@ -904,31 +505,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "figma",
-      "type": "mcp",
-      "category": null,
-      "name": "Figma",
-      "version": "1.0.0",
-      "description": "Figma Dev Mode server — read components, variables, and layout; generate code from frames; create and update canvas content. Enable the desktop MCP server (Dev Mode) on port 3845.",
-      "tags": [
-        "creator",
-        "design",
-        "figma",
-        "ui"
-      ],
-      "author": "Figma",
-      "license": null,
-      "source": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server",
-      "path": "mcp/figma",
-      "icon": "mcp/figma/icon.svg",
-      "checksum": "sha256:717443d2b62392c111b0d81a117223333acbc1b9cd129a300167e5d825c38fde",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "filesystem",
       "type": "mcp",
       "category": null,
@@ -946,29 +522,6 @@
       "path": "mcp/filesystem",
       "icon": "mcp/filesystem/icon.svg",
       "checksum": "sha256:0b95cfe03e727a0f6d67cbd684e34c65101722d2e72bd9a22070fb4aa198ed29",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "git",
-      "type": "mcp",
-      "category": null,
-      "name": "Git",
-      "version": "1.1.0",
-      "description": "Read, search, and manipulate local Git repositories.",
-      "tags": [
-        "git",
-        "vcs"
-      ],
-      "author": "Model Context Protocol",
-      "license": "MIT",
-      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
-      "path": "mcp/git",
-      "icon": "mcp/git/icon.svg",
-      "checksum": "sha256:4b10e73a4314c0f2233035508b7f0479d0d6cbfaa68865feb6b268ae3e8aee59",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=0.6.0"
@@ -1026,56 +579,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "google-calendar",
-      "type": "mcp",
-      "category": null,
-      "name": "Google Calendar",
-      "version": "1.0.0",
-      "description": "Events, scheduling, and availability checks on Google Calendar (OAuth on first call). Creating invites notifies real people — confirm writes.",
-      "tags": [
-        "google",
-        "calendar",
-        "scheduling",
-        "productivity"
-      ],
-      "author": "nspady",
-      "license": "MIT",
-      "source": "https://github.com/nspady/google-calendar-mcp",
-      "path": "mcp/google-calendar",
-      "icon": "mcp/google-calendar/icon.svg",
-      "checksum": "sha256:b5fbd7ddf8b37bd1003509b9be932624fef5c2a00b5fe45ec9e3b8f977cfaba3",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "google-drive",
-      "type": "mcp",
-      "category": null,
-      "name": "Google Drive",
-      "version": "1.0.0",
-      "description": "Search and read files across your Google Drive. Archived MCP reference server — works but unmaintained; grant read-only scope.",
-      "tags": [
-        "google",
-        "drive",
-        "files",
-        "productivity"
-      ],
-      "author": "Model Context Protocol",
-      "license": "MIT",
-      "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive",
-      "path": "mcp/google-drive",
-      "icon": "mcp/google-drive/icon.svg",
-      "checksum": "sha256:639484bb0ee16a91cc44c15e6e1ca44e28651d3871cce154b39e5428f4b84b02",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "higgsfield",
       "type": "mcp",
       "category": null,
@@ -1094,85 +597,6 @@
       "path": "mcp/higgsfield",
       "icon": "mcp/higgsfield/icon.svg",
       "checksum": "sha256:1e907f4143b46df589f4bf474d001c69862435bcb38c567bc2bfbb30aba26203",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "kubernetes",
-      "type": "mcp",
-      "category": null,
-      "name": "Kubernetes",
-      "version": "1.0.0",
-      "description": "Cluster inspection and kubectl-style ops in plain English. Community-maintained — point it at a non-prod context first.",
-      "tags": [
-        "kubernetes",
-        "devops",
-        "infra"
-      ],
-      "author": "Flux159",
-      "license": "MIT",
-      "source": "https://github.com/Flux159/mcp-server-kubernetes",
-      "path": "mcp/kubernetes",
-      "icon": "mcp/kubernetes/icon.svg",
-      "checksum": "sha256:c93bce71926315ead61698b1987456acd1e0b1480dd5b81b5670c02246bd52c1",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "linear",
-      "type": "mcp",
-      "category": null,
-      "name": "Linear",
-      "version": "1.0.0",
-      "description": "Issues, sprint planning, and search in Linear. Official remote server; permissions inherit your Linear access.",
-      "tags": [
-        "project-management",
-        "issues",
-        "linear",
-        "productivity"
-      ],
-      "author": "Linear",
-      "license": null,
-      "source": "https://linear.app/docs/mcp",
-      "path": "mcp/linear",
-      "icon": "mcp/linear/icon.svg",
-      "checksum": "sha256:093d236c90581163f0dd73b6617eea21cf111101dddce05df31da458b43a97ce",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "meigen-ai-design",
-      "type": "mcp",
-      "category": null,
-      "name": "MeiGen AI Design",
-      "version": "1.0.0",
-      "description": "Image and video generation across 9 leading models: GPT Image 2, Nanobanana 2, Seedream 5.0, Midjourney V8.1, Flux 2 Klein, Seedance 2.0, Happyhorse 1.0, Veo 3.1, plus local ComfyUI. SSRF-hardened, R2 uploads auto-expire after 24h. 1k+ stars.",
-      "tags": [
-        "image-gen",
-        "video-gen",
-        "midjourney",
-        "flux",
-        "dalle",
-        "seedance",
-        "veo",
-        "comfyui",
-        "creative"
-      ],
-      "author": "jau123",
-      "license": "MIT",
-      "source": "https://github.com/jau123/MeiGen-AI-Design-MCP",
-      "path": "mcp/meigen-ai-design",
-      "icon": "mcp/meigen-ai-design/icon.svg",
-      "checksum": "sha256:d7ace777ba05957644c58cf031bbf8873516f05a0ce551c7f3676ee90c5aacee",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=0.6.0"
@@ -1203,61 +627,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "mistral",
-      "type": "mcp",
-      "category": null,
-      "name": "Mistral AI",
-      "version": "1.0.0",
-      "description": "Full Mistral AI surface — chat, embeddings, vision, OCR, Voxtral audio (transcribe/speak), Codestral FIM, agents, moderation, files, and batch. 22 tools. Listed on the Official MCP Registry. Free Experiment tier: 1B tokens/month.",
-      "tags": [
-        "mistral",
-        "llm",
-        "ocr",
-        "audio",
-        "transcription",
-        "embeddings",
-        "vision",
-        "codestral",
-        "fim"
-      ],
-      "author": "Swih",
-      "license": "MIT",
-      "source": "https://github.com/Swih/mistral-mcp",
-      "path": "mcp/mistral",
-      "icon": "mcp/mistral/icon.svg",
-      "checksum": "sha256:9b1c3a679fbd2a5abf0c6552026d6ce0203d3e3a215be023ebfe9b8e58a74e85",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "neon",
-      "type": "mcp",
-      "category": null,
-      "name": "Neon",
-      "version": "1.0.0",
-      "description": "Serverless Postgres with branch-based migrations — the agent tests migrations on an instant copy-on-write branch before applying.",
-      "tags": [
-        "database",
-        "postgres",
-        "neon",
-        "serverless"
-      ],
-      "author": "Neon",
-      "license": "MIT",
-      "source": "https://github.com/neondatabase/mcp-server-neon",
-      "path": "mcp/neon",
-      "icon": "mcp/neon/icon.svg",
-      "checksum": "sha256:cb9f0aa054641e0628c2e4dd2478f48d3ae0496a2e4a6e18ea484e65928adc9c",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "notion",
       "type": "mcp",
       "category": null,
@@ -1275,54 +644,6 @@
       "path": "mcp/notion",
       "icon": "mcp/notion/icon.svg",
       "checksum": "sha256:1cd152fbccdab65c7e67b7b3eef9634fd5128805e7f17a73c89963ab72581f9e",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "paypal",
-      "type": "mcp",
-      "category": null,
-      "name": "PayPal",
-      "version": "1.0.0",
-      "description": "Invoices, transactions, and payouts via PayPal's official MCP / agent toolkit. Moves real money — confirm every write.",
-      "tags": [
-        "payments",
-        "fintech",
-        "paypal"
-      ],
-      "author": "PayPal",
-      "license": null,
-      "source": "https://www.paypal.ai",
-      "path": "mcp/paypal",
-      "icon": "mcp/paypal/icon.svg",
-      "checksum": "sha256:d80ccdd9d62f34d56bc56ddec473b0b7d97b666a5f3755c26aaa905e6a1e2f56",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "plaid",
-      "type": "mcp",
-      "category": null,
-      "name": "Plaid",
-      "version": "1.0.0",
-      "description": "Bank-data aggregation, balances, and transactions via Plaid's official MCP. Handles people's banking data — read-only, mind the context window.",
-      "tags": [
-        "banking",
-        "fintech",
-        "plaid"
-      ],
-      "author": "Plaid",
-      "license": null,
-      "source": "https://plaid.com/docs/",
-      "path": "mcp/plaid",
-      "icon": "mcp/plaid/icon.svg",
-      "checksum": "sha256:37b5ba091ee40350b78b0e3d66c1a91d95e54d57f61ebf58a63fae7ae18a7a4e",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=0.6.0"
@@ -1355,79 +676,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "polygon-io",
-      "type": "mcp",
-      "category": null,
-      "name": "Polygon.io",
-      "version": "1.0.0",
-      "description": "Market-data feeds — stocks, options, forex, crypto, aggregates and trades — via Polygon.io's official server. Data only, no execution.",
-      "tags": [
-        "trading",
-        "market-data",
-        "stocks",
-        "markets"
-      ],
-      "author": "Polygon.io",
-      "license": null,
-      "source": "https://polygon.io/docs",
-      "path": "mcp/polygon-io",
-      "icon": "mcp/polygon-io/icon.svg",
-      "checksum": "sha256:b21933ea691dce48b41b3f09e279d9616e68b1265281f96c1f135db5124b025e",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "postgres",
-      "type": "mcp",
-      "category": null,
-      "name": "Postgres",
-      "version": "1.1.0",
-      "description": "Query and inspect PostgreSQL databases (read-only).",
-      "tags": [
-        "database",
-        "sql",
-        "postgres"
-      ],
-      "author": "Model Context Protocol",
-      "license": "MIT",
-      "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/postgres",
-      "path": "mcp/postgres",
-      "icon": "mcp/postgres/icon.svg",
-      "checksum": "sha256:3785186b1b8f4aa1355c480767ae69483b7385165035feb39bb33c1d750be09c",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "puppeteer",
-      "type": "mcp",
-      "category": null,
-      "name": "Puppeteer",
-      "version": "1.1.0",
-      "description": "Drive a headless browser to navigate, scrape, and screenshot.",
-      "tags": [
-        "browser",
-        "automation",
-        "scraping"
-      ],
-      "author": "Model Context Protocol",
-      "license": "MIT",
-      "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/puppeteer",
-      "path": "mcp/puppeteer",
-      "icon": "mcp/puppeteer/icon.svg",
-      "checksum": "sha256:9ddec64ca44a20ee0370cbbbb97d3bd39c383cb41677972fbab6b946648a19c8",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "quickbooks",
       "type": "mcp",
       "category": null,
@@ -1452,54 +700,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "redis",
-      "type": "mcp",
-      "category": null,
-      "name": "Redis",
-      "version": "1.0.0",
-      "description": "Inspect keys, manage caches, and monitor memory on a Redis instance. Official server from Redis.",
-      "tags": [
-        "database",
-        "cache",
-        "redis"
-      ],
-      "author": "Redis",
-      "license": "MIT",
-      "source": "https://github.com/redis/mcp-redis",
-      "path": "mcp/redis",
-      "icon": "mcp/redis/icon.svg",
-      "checksum": "sha256:be182da3854dafb7a16e38c6dd09ec55159a26456cc58fb127d6556113a28c3e",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "sentry",
-      "type": "mcp",
-      "category": null,
-      "name": "Sentry",
-      "version": "1.0.0",
-      "description": "Pipe issues, stack traces, and event detail into the agent — read a prod error and propose the fix. Pairs well with GitHub.",
-      "tags": [
-        "monitoring",
-        "errors",
-        "observability"
-      ],
-      "author": "Sentry",
-      "license": null,
-      "source": "https://docs.sentry.io/product/sentry-mcp/",
-      "path": "mcp/sentry",
-      "icon": "mcp/sentry/icon.svg",
-      "checksum": "sha256:e7c25f75c99e864ce412a767623a324f7fc78464556f2593b82a388a588edb14",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "sequential-thinking",
       "type": "mcp",
       "category": null,
@@ -1516,30 +716,6 @@
       "path": "mcp/sequential-thinking",
       "icon": "mcp/sequential-thinking/icon.svg",
       "checksum": "sha256:10784eef9c2338b49f259e06538880951e570bbeadd1227d9c1c29b45dce2539",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "slack",
-      "type": "mcp",
-      "category": null,
-      "name": "Slack",
-      "version": "1.1.0",
-      "description": "Read and post messages across Slack channels.",
-      "tags": [
-        "slack",
-        "chat",
-        "messaging"
-      ],
-      "author": "Model Context Protocol",
-      "license": "MIT",
-      "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/slack",
-      "path": "mcp/slack",
-      "icon": "mcp/slack/icon.svg",
-      "checksum": "sha256:9e5e3e00e15c495dd8b3237d9df80be9411b7dec0091b84c1c6598d900f9089e",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=0.6.0"
@@ -1619,31 +795,6 @@
       "acceptsFunding": false
     },
     {
-      "id": "supabase",
-      "type": "mcp",
-      "category": null,
-      "name": "Supabase",
-      "version": "1.0.0",
-      "description": "Manage your Supabase backend — database, auth, storage, and edge functions — through chat. Start read-only.",
-      "tags": [
-        "database",
-        "backend",
-        "supabase",
-        "auth"
-      ],
-      "author": "Supabase",
-      "license": "Apache-2.0",
-      "source": "https://github.com/supabase-community/supabase-mcp",
-      "path": "mcp/supabase",
-      "icon": "mcp/supabase/icon.svg",
-      "checksum": "sha256:2ebbc9881f5cef611baa817e271963d9bceb39185d3c5631e72fb89aa701e52b",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
       "id": "the-graph",
       "type": "mcp",
       "category": null,
@@ -1662,31 +813,6 @@
       "path": "mcp/the-graph",
       "icon": "mcp/the-graph/icon.svg",
       "checksum": "sha256:68fa29164b94f00d880fb631606baec69ea61fac59e7bae997d733c9a0fcc0ff",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "thirdweb",
-      "type": "mcp",
-      "category": null,
-      "name": "thirdweb",
-      "version": "1.0.0",
-      "description": "Deploy and interact with smart contracts across EVM chains. Contract deploys are irreversible and cost gas — test on a testnet first.",
-      "tags": [
-        "web3",
-        "blockchain",
-        "evm",
-        "smart-contracts"
-      ],
-      "author": "thirdweb",
-      "license": null,
-      "source": "https://portal.thirdweb.com",
-      "path": "mcp/thirdweb",
-      "icon": "mcp/thirdweb/icon.svg",
-      "checksum": "sha256:d3291b576f4604f550a0b049fe6d47e96ee809ed9cead0a5fe0a2988131ff956",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=0.6.0"
@@ -1737,31 +863,6 @@
       "path": "mcp/vercel",
       "icon": "mcp/vercel/icon.svg",
       "checksum": "sha256:7a3516b37fc924ef1656ebe4792c94a36ebfaa286874730a68a7699af0c2539f",
-      "compatibility": {
-        "hermes": ">=0.3.0",
-        "desktop": ">=0.6.0"
-      },
-      "acceptsFunding": false
-    },
-    {
-      "id": "youtube",
-      "type": "mcp",
-      "category": null,
-      "name": "YouTube",
-      "version": "1.0.0",
-      "description": "Video search and transcript extraction — great for research and repurposing content. Transcript availability depends on the video having captions.",
-      "tags": [
-        "creator",
-        "youtube",
-        "video",
-        "research"
-      ],
-      "author": "anaisbetts",
-      "license": "MIT",
-      "source": "https://github.com/anaisbetts/mcp-youtube",
-      "path": "mcp/youtube",
-      "icon": "mcp/youtube/icon.svg",
-      "checksum": "sha256:bb86f3b40e3bd7fb3b060027464711e39e46ae3bb791d32faa0b59b17ccc8dec",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=0.6.0"
