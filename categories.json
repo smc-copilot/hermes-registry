@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-09-20T09:38:50.7164315Z",
+  "generated": "2026-09-20T09:42:01.5447903Z",
   "types": [
     {
       "type": "agent",
-      "count": 17,
+      "count": 3,
       "categories": []
     },
     {
