@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-07-09T09:08:25+05:30",
+  "generated": "2026-09-20T08:49:21.1735571Z",
   "types": [
     {
       "type": "agent",
@@ -14,7 +14,7 @@
     },
     {
       "type": "skill",
-      "count": 349,
+      "count": 368,
       "categories": [
         {
           "name": "apple",
@@ -98,7 +98,7 @@
         },
         {
           "name": "research",
-          "count": 6
+          "count": 25
         },
         {
           "name": "smart-home",
